@@ -1,0 +1,46 @@
+.macro-card {
+  min-height: 142px;
+  padding: 14px;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 10px;
+  border: 1px solid rgba(217, 210, 228, 0.08);
+  border-radius: 8px;
+  background: #202020;
+}
+
+.macro-card strong {
+  color: #d9d2e4;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.macro-ring {
+  width: 82px;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, #202020 58%, transparent 60%),
+    conic-gradient(var(--color), var(--percent), rgba(217, 210, 228, 0.12) 0);
+}
+
+.macro-ring span,
+.macro-ring small {
+  grid-area: 1 / 1;
+}
+
+.macro-ring span {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.macro-ring small {
+  margin-top: 32px;
+  color: #9d95aa;
+  font-size: 10px;
+  font-weight: 800;
+}

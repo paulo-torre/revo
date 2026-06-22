@@ -1,0 +1,107 @@
+.signup-screen {
+  padding-bottom: 22px;
+}
+
+.signup-heading {
+  margin-top: 48px;
+  margin-bottom: 18px;
+}
+
+.progress-track {
+  height: 6px;
+  margin-bottom: 28px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #202020;
+}
+
+.progress-track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #514166;
+  transition: width 180ms ease;
+}
+
+.signup-form {
+  min-height: 0;
+  flex: 1;
+  align-content: start;
+}
+
+.step-actions {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 30px;
+}
+
+.step-back,
+.step-next {
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+}
+
+.step-back {
+  border: 1px solid rgba(217, 210, 228, 0.18);
+}
+
+.step-back:disabled {
+  color: rgba(217, 210, 228, 0.35);
+  cursor: not-allowed;
+  border-color: rgba(217, 210, 228, 0.08);
+  background: transparent;
+  transform: none;
+}
+
+.completion-panel {
+  min-height: calc(100svh - 68px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.completion-panel h1 {
+  margin: 0 0 16px;
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 1.08;
+  font-weight: 900;
+}
+
+.completion-panel p {
+  margin: 0;
+  color: #d9d2e4;
+  line-height: 1.5;
+}
+
+.profile-summary {
+  display: grid;
+  gap: 10px;
+  margin: 28px 0 26px;
+}
+
+.profile-summary div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px;
+  border-radius: 8px;
+  background: #202020;
+}
+
+.profile-summary dt {
+  color: #9d95aa;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.profile-summary dd {
+  margin: 0;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  text-align: right;
+}

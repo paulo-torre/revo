@@ -1,0 +1,303 @@
+.training-screen {
+  width: min(100%, 430px);
+  min-height: 100svh;
+  margin: 0 auto;
+  padding: 28px 18px 98px;
+  box-sizing: border-box;
+  background: #101010;
+}
+
+.training-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.training-header h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 34px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.screen-kicker {
+  margin: 0 0 10px;
+  color: #9d95aa;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+.status-pill {
+  min-height: 28px;
+  padding: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.status-medium {
+  color: #ffe69a;
+  background: rgba(255, 210, 77, 0.13);
+}
+
+.status-good {
+  color: #8df0a7;
+  background: rgba(78, 217, 112, 0.13);
+}
+
+.finish-button {
+  min-height: 38px;
+  padding: 0 10px;
+  border: 1px solid rgba(255, 92, 92, 0.28);
+  border-radius: 8px;
+  color: #ff8b8b;
+  background: rgba(255, 92, 92, 0.1);
+  font-size: 13px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.training-section {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.exercise-card,
+.rest-card,
+.vital-card,
+.recommendation-card,
+.next-exercise-card {
+  border: 1px solid rgba(217, 210, 228, 0.08);
+  border-radius: 8px;
+  background: #202020;
+}
+
+.exercise-card {
+  padding: 16px;
+}
+
+.exercise-card span,
+.rest-card span,
+.vital-card span,
+.recommendation-card span,
+.next-exercise-card span {
+  display: block;
+  color: #9d95aa;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.exercise-card strong,
+.rest-card strong,
+.vital-card strong,
+.recommendation-card strong,
+.next-exercise-card strong {
+  display: block;
+  margin-top: 6px;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+.exercise-details {
+  display: grid;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.exercise-details p,
+.recommendation-card p,
+.next-exercise-card p {
+  margin: 0;
+  color: #d9d2e4;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.start-set-button {
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+}
+
+.start-set-button:disabled {
+  color: rgba(255, 255, 255, 0.58);
+  cursor: not-allowed;
+  box-shadow: none;
+  background: rgba(81, 65, 102, 0.55);
+}
+
+.rest-card {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.rest-card strong {
+  margin-top: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.workout-progress-card {
+  padding: 16px;
+  display: grid;
+  gap: 14px;
+  border: 1px solid rgba(217, 210, 228, 0.08);
+  border-radius: 8px;
+  background: #202020;
+}
+
+.workout-progress-card div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.workout-progress-card span {
+  color: #9d95aa;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.workout-progress-card strong {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.workout-progress-track {
+  height: 7px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(217, 210, 228, 0.12);
+}
+
+.workout-progress-track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #514166 0%, #8df0a7 100%);
+  transition: width 180ms ease;
+}
+
+.vitals-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.vital-card {
+  min-height: 112px;
+  padding: 14px;
+  position: relative;
+  overflow: hidden;
+  border-color: rgba(0, 255, 179, 0.26);
+  background:
+    linear-gradient(135deg, rgba(0, 255, 179, 0.16), transparent 58%),
+    #202020;
+}
+
+.vital-card::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 8px;
+  background: #00ffb3;
+  box-shadow: 0 0 22px rgba(0, 255, 179, 0.75);
+}
+
+.vital-card.warning {
+  border-color: rgba(255, 199, 0, 0.34);
+  background:
+    linear-gradient(135deg, rgba(255, 199, 0, 0.18), transparent 58%),
+    #202020;
+}
+
+.vital-card.warning::before {
+  background: #ffc700;
+  box-shadow: 0 0 22px rgba(255, 199, 0, 0.78);
+}
+
+.vital-card.danger {
+  border-color: rgba(255, 45, 85, 0.36);
+  background:
+    linear-gradient(135deg, rgba(255, 45, 85, 0.2), transparent 58%),
+    #202020;
+}
+
+.vital-card.danger::before {
+  background: #ff2d55;
+  box-shadow: 0 0 24px rgba(255, 45, 85, 0.82);
+}
+
+.vital-card strong {
+  font-size: 20px;
+}
+
+.recommendation-card,
+.next-exercise-card {
+  padding: 16px;
+}
+
+.recommendation-card {
+  border-color: rgba(78, 217, 112, 0.18);
+}
+
+.recommendation-card.warning {
+  border-color: rgba(255, 230, 154, 0.22);
+}
+
+.recommendation-card.danger {
+  border-color: rgba(255, 107, 107, 0.26);
+}
+
+.recommendation-card p,
+.next-exercise-card p {
+  margin-top: 10px;
+}
+
+.status-danger {
+  color: #ff8b8b;
+  background: rgba(255, 92, 92, 0.13);
+}
+
+@media (min-width: 720px) {
+  .training-screen {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .training-screen {
+    padding-inline: 18px;
+  }
+
+  .vitals-grid {
+    grid-template-columns: 1fr;
+  }
+}

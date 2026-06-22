@@ -1,0 +1,113 @@
+.auth-screen {
+  width: min(100%, 430px);
+  min-height: 100svh;
+  margin: 0 auto;
+  padding: 34px 24px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: #101010;
+}
+
+.back-link {
+  width: fit-content;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+.auth-heading {
+  margin-top: 74px;
+  margin-bottom: 34px;
+}
+
+.screen-kicker {
+  margin: 0 0 10px;
+  color: #9d95aa;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.auth-heading h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 34px;
+  line-height: 1.08;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.auth-form {
+  display: grid;
+  gap: 18px;
+}
+
+.field-group {
+  display: grid;
+  gap: 8px;
+  color: #d9d2e4;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.field-group input {
+  width: 100%;
+  min-height: 52px;
+  border: 1px solid rgba(217, 210, 228, 0.14);
+  border-radius: 8px;
+  padding: 0 14px;
+  color: #ffffff;
+  background: #202020;
+  outline: none;
+}
+
+.field-group input:focus {
+  border-color: rgba(217, 210, 228, 0.5);
+  box-shadow: 0 0 0 3px rgba(81, 65, 102, 0.35);
+}
+
+.field-group input[aria-invalid='true'] {
+  border-color: #ff5c5c;
+}
+
+.field-error {
+  color: #ff7a7a;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.check-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #d9d2e4;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.check-row input {
+  width: 18px;
+  height: 18px;
+  accent-color: #514166;
+}
+
+.auth-submit {
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.back-link:focus-visible {
+  outline: 2px solid #d9d2e4;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (min-width: 720px) {
+  .auth-screen {
+    display: none;
+  }
+}

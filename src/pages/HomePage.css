@@ -1,0 +1,171 @@
+.home-screen {
+  width: min(100%, 430px);
+  min-height: 100svh;
+  margin: 0 auto;
+  padding: 28px 18px 98px;
+  box-sizing: border-box;
+  background: #101010;
+}
+
+.home-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 26px;
+}
+
+.home-header h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 34px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.profile-dot {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #ffffff;
+  background: #514166;
+  font-weight: 900;
+}
+
+.home-section {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+.status-pill {
+  min-height: 28px;
+  padding: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.status-medium {
+  color: #ffe69a;
+  background: rgba(255, 210, 77, 0.13);
+}
+
+.status-good {
+  color: #8df0a7;
+  background: rgba(78, 217, 112, 0.13);
+}
+
+.status-good-text {
+  color: #8df0a7;
+}
+
+.highlight-card,
+.metric-card,
+.chart-card {
+  border: 1px solid rgba(217, 210, 228, 0.08);
+  border-radius: 8px;
+  background: #202020;
+}
+
+.highlight-card {
+  padding: 16px;
+  display: grid;
+  gap: 16px;
+}
+
+.highlight-card span,
+.metric-card span,
+.chart-card span {
+  display: block;
+  color: #9d95aa;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.highlight-card strong,
+.metric-card strong,
+.chart-card strong {
+  display: block;
+  margin-top: 5px;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+.start-training {
+  width: 100%;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 12px;
+}
+
+.metric-card {
+  min-height: 104px;
+  padding: 14px;
+}
+
+.metric-card strong {
+  font-size: 20px;
+}
+
+.chart-card {
+  min-height: 130px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: minmax(96px, 0.7fr) 1fr;
+  gap: 16px;
+  align-items: end;
+}
+
+.macro-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.sleep-card {
+  grid-template-columns: minmax(112px, 0.8fr) 1fr;
+}
+
+@media (min-width: 720px) {
+  .home-screen {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .home-screen {
+    padding-inline: 18px;
+  }
+
+  .metric-grid,
+  .chart-card,
+  .sleep-card {
+    grid-template-columns: 1fr;
+  }
+}

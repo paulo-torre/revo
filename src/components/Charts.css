@@ -1,0 +1,59 @@
+.bar-chart {
+  height: 80px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 7px;
+}
+
+.bar-chart-plot {
+  position: relative;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: repeat(var(--bar-count), minmax(0, 1fr));
+  gap: 6px;
+}
+
+.bar-chart-goal-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: var(--goal-position);
+  z-index: 2;
+  height: 1px;
+  background: rgba(217, 210, 228, 0.28);
+}
+
+.bar-chart-item {
+  min-width: 0;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.bar-chart-bar {
+  width: 100%;
+  min-width: 10px;
+  border-radius: 999px 999px 3px 3px;
+}
+
+.bar-chart-bar.goal-reached {
+  background: linear-gradient(180deg, #8df0a7 0%, #5dd37d 100%);
+}
+
+.bar-chart-bar.goal-missed {
+  background: linear-gradient(180deg, #6c5886 0%, #514166 100%);
+}
+
+.bar-chart-axis {
+  display: grid;
+  grid-template-columns: repeat(var(--bar-count), minmax(0, 1fr));
+  justify-items: center;
+  gap: 6px;
+}
+
+.bar-chart-axis small {
+  color: #9d95aa;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1;
+}

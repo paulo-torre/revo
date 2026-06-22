@@ -127,66 +127,66 @@ Referência analisada: `https://revo.framer.wiki` em 21/06/2026. A referência j
 
 ### 5. Treino ao Vivo - `/training`
 
-- [ ] Criar tela "Treino".
-- [ ] Exibir exercício atual, exemplo: "Supino com halteres".
-- [ ] Exibir detalhes do exercício:
-  - [ ] Peso ou carga, exemplo: halter de 20 kg.
-  - [ ] Repetições, exemplo: 8 repetições.
-  - [ ] Séries restantes.
-- [ ] Incluir botão "Iniciar Série".
-- [ ] Incluir botão "Finalizar Treino".
-- [ ] Exibir tempo de descanso restante em formato `00:00`.
-- [ ] Simular conexão com dispositivo, exemplo: "Conectado em: SmartWatch Exemplo".
-- [ ] Criar seção "Sinais vitais":
-  - [ ] Exibir frequência cardíaca em bpm.
-  - [ ] Exibir gasto calórico acumulado.
-  - [ ] Exibir pressão sanguínea, exemplo: `13 / 8`.
-  - [ ] Exibir oxigenação do sangue, exemplo: `99%`.
-  - [ ] Atualizar sinais vitais em intervalos simulados.
-- [ ] Criar recomendações ao vivo baseadas nos sinais:
-  - [ ] Reduzir intensidade se frequência cardíaca estiver alta.
-  - [ ] Aumentar descanso se recuperação estiver baixa.
-  - [ ] Sugerir hidratação em treino longo ou calorias altas.
-  - [ ] Sugerir manter ritmo quando sinais estiverem bons.
-  - [ ] Alertar se oxigenação ou pressão estiver fora do esperado.
-- [ ] Usar cores vermelho/amarelo/verde para classificar risco dos sinais.
-- [ ] Exibir próximo exercício planejado.
-- [ ] Exibir progresso do treino atual.
-- [ ] Ao finalizar, redirecionar para `/pos-training`.
+- [x] Criar tela "Treino".
+- [x] Exibir exercício atual, exemplo: "Supino com halteres".
+- [x] Exibir detalhes do exercício:
+  - [x] Peso ou carga, exemplo: halter de 20 kg.
+  - [x] Repetições, exemplo: 8 repetições.
+  - [x] Séries restantes.
+- [x] Incluir botão "Iniciar Série".
+- [x] Incluir botão "Finalizar Treino".
+- [x] Exibir tempo de descanso restante em formato `00:00`.
+- [x] Simular conexão com dispositivo, exemplo: "Conectado em: SmartWatch Exemplo".
+- [x] Criar seção "Sinais vitais":
+  - [x] Exibir frequência cardíaca em bpm.
+  - [x] Exibir gasto calórico acumulado.
+  - [x] Exibir pressão sanguínea, exemplo: `13 / 8`.
+  - [x] Exibir oxigenação do sangue, exemplo: `99%`.
+  - [x] Atualizar sinais vitais em intervalos simulados.
+- [x] Criar recomendações ao vivo baseadas nos sinais:
+  - [x] Reduzir intensidade se frequência cardíaca estiver alta.
+  - [x] Aumentar descanso se recuperação estiver baixa.
+  - [x] Sugerir hidratação em treino longo ou calorias altas.
+  - [x] Sugerir manter ritmo quando sinais estiverem bons.
+  - [x] Alertar se oxigenação ou pressão estiver fora do esperado.
+- [x] Usar cores vermelho/amarelo/verde para classificar risco dos sinais.
+- [x] Exibir próximo exercício planejado.
+- [x] Exibir progresso do treino atual.
+- [x] Ao finalizar, redirecionar para `/pos-training`.
 
 ### 6. Pós-Treino - `/pos-training`
 
-- [ ] Exibir estado "Treino finalizado".
-- [ ] Exibir rendimento geral em porcentagem, exemplo: `108%`.
-- [ ] Explicar o rendimento com mensagem curta, exemplo: treino com mais intensidade que o recomendado.
-- [ ] Exibir recomendação pós-treino, exemplo: descansar bem antes do próximo treino.
-- [ ] Criar seção "Sinais vitais".
-- [ ] Exibir resumo de:
-  - [ ] Frequência cardíaca.
-  - [ ] Gasto de calorias.
-  - [ ] Pressão sanguínea.
-  - [ ] Oxigenação do sangue.
-- [ ] Classificar cada indicador com cor de status.
-- [ ] Exibir botão para voltar para Home.
-- [ ] Exibir opção para ver progresso.
-- [ ] Salvar o treino no histórico mockado.
+- [x] Exibir estado "Treino finalizado".
+- [x] Exibir rendimento geral em porcentagem, exemplo: `108%`.
+- [x] Explicar o rendimento com mensagem curta, exemplo: treino com mais intensidade que o recomendado.
+- [x] Exibir recomendação pós-treino, exemplo: descansar bem antes do próximo treino.
+- [x] Criar seção "Sinais vitais".
+- [x] Exibir resumo de:
+  - [x] Frequência cardíaca.
+  - [x] Gasto de calorias.
+  - [x] Pressão sanguínea.
+  - [x] Oxigenação do sangue.
+- [x] Classificar cada indicador com cor de status.
+- [x] Exibir botão para voltar para Home.
+- [x] Exibir opção para ver progresso.
+- [x] Salvar o treino no histórico mockado.
 
 ### 7. Progresso - `/progress`
 
-- [ ] Criar tela "Progresso".
-- [ ] Incluir seção "Metas pessoais".
-- [ ] Exibir meta de peso, exemplo: meta 75 kg, atual 72 kg.
-- [ ] Exibir barra ou gráfico simples de evolução.
-- [ ] Exibir histórico de treinos recentes.
-- [ ] Exibir indicadores de progresso:
-  - [ ] Peso.
-  - [ ] Frequência semanal.
-  - [ ] Calorias gastas.
-  - [ ] Carga total levantada.
-  - [ ] Tempo médio de treino.
-  - [ ] Recuperação média.
-- [ ] Exibir conquistas ou marcos recentes.
-- [ ] Permitir editar metas pessoais de forma simulada.
+- [x] Criar tela "Progresso".
+- [x] Incluir seção "Metas pessoais".
+- [x] Exibir meta de peso, exemplo: meta 75 kg, atual 72 kg.
+- [x] Exibir barra ou gráfico simples de evolução.
+- [x] Exibir histórico de treinos recentes.
+- [x] Exibir indicadores de progresso:
+  - [x] Peso.
+  - [x] Frequência semanal.
+  - [x] Calorias gastas.
+  - [x] Carga total levantada.
+  - [x] Tempo médio de treino.
+  - [x] Recuperação média.
+- [x] Exibir conquistas ou marcos recentes.
+- [x] Permitir editar metas pessoais de forma simulada.
 
 ### 8. Nutrição - `/nutrition`
 
@@ -303,9 +303,9 @@ Referência analisada: `https://revo.framer.wiki` em 21/06/2026. A referência j
 - [ ] Implementar login simples.
 - [x] Implementar cadastro/onboarding em uma única página `/signup` com etapas controladas por estado.
 - [x] Implementar home.
-- [ ] Implementar treino ao vivo com sinais vitais simulados.
-- [ ] Implementar pós-treino.
-- [ ] Implementar progresso básico.
+- [x] Implementar treino ao vivo com sinais vitais simulados.
+- [x] Implementar pós-treino.
+- [x] Implementar progresso básico.
 - [x] Implementar navegação inferior.
 
 ### Versão Mais Completa
